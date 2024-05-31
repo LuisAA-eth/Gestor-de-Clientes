@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistema de gestion de clientes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Gestion de clientes">
+
+
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/onlysportstv.png" sizes="any">
+  <link rel="icon" href="onlysportstv.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="onlysportstv.png">
+  <link rel="manifest" href="site.webmanifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Quattrocento&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+ 
+  <div class="container">
+    <h1>Gestión de Clientes</h1>
+    <frame>
+        <img id="Logo" src="img/Rey Beisbol.png" alt="Logo onlysportstv" 
+    </frame>
+    <h2 class="subtitulo">Agregar Clientes</h2>
+    <form id="cliente-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="tipoSuscripcion">Tipo de Suscripción:</label>
+        <select class="tipo_suscripcion" id="tipoSuscripcion" required>
+            <option value="">Seleccione una opción...</option>
+            <option value="MLB">MLB.TV</option>
+            <option value="NBA">NBA.TV</option>
+            <option value="FUTBOL">Fútbol</option>
+        </select><br>
+
+        <label for="fechaInicio">Fecha de Inicio:</label>
+        <input type="date" id="fechaInicio" required>
+        
+        <label for="fechaVencimiento">Fecha de Vencimiento:</label>
+        <input type="date" id="fechaVencimiento">
+
+        <button class="agregarCliente" type="submit">Agregar Cliente</button>
+    </form>
+    <div id="clientes-list"></div>
+</div>
+
+
+
+
+<div class="container">
+  <h1 class="clientes_activos">Clientes Activos</h1>
+  <table id="clientes-activos-table">
+      <thead>
+          <tr>
+              <th>ID Cliente</th>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Tipo de Suscripción</th>
+              <th>Fecha de Inicio</th>
+              <th>Fecha de Vencimiento</th>
+              <th>Estado de Suscripcion</th>
+              <th>Verificación</th>
+              <th>Renovación</th>
+              <th>Acciones</th>
+          </tr>
+      </thead>
+      <tbody>
+          <!-- Los datos de los clientes activos se insertarán aquí dinámicamente -->
+      </tbody>
+  </table>
+</div>
+
+
+
+<script src="src/app.js"></script> 
+<script src="src/clientesActivos.js"></script> 
+<script src="src/script.js"></script> 
+
+
+
+
+</body>
+
+</html>

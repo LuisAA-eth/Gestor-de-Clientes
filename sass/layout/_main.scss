@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    overflow-x: auto;
+
+    @include tablet {
+        width: 95%;
+      }
+    
+      @include mobile {
+        width: 100%;
+      }
+}
+
+#Logo{
+    width: 20%;
+    height:auto;
+
+    @include mobile {
+        width: 50%;
+      }
+
+      @include tablet {
+        width: 35%;  // Ajusta el tamaño del logo para tabletas
+    }
+}
+
+.subtitulo{
+    color: blue;
+    margin-top: -25px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+
+
+    @include mobile {
+        width: 100%;
+        display: block;
+        overflow-x: auto;  // Permite desplazamiento horizontal en dispositivos pequeños
+    }
+}
+
+
+
+#clientes-activos-table{
+    width: 100%;
+    margin-left: 10px;
+}
+
+input , .tipo_suscripcion{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 500;
+    font-size: .8vw;
+    color: #252323;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.8vw;
+    max-width: 190px;
+    transition: .4s;
+    margin-right: 5px;
+    
+
+
+    @include mobile {
+        font-size: 14px;
+        padding: 3%;
+      }
+
+      @include tablet {
+        font-size: 15px;
+        padding: 2%;
+    }
+  }
+
+
+  label{
+    margin-right: 5px;
+  }
+  
+  input:hover ,.tipo_suscripcion:hover{
+    box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+  }
+  
+  input:focus , .tipo_suscripcion:focus{
+    box-shadow: 0 0 0 .15vw rgb(6, 58, 121);
+  }
+
+
+
+
+table, th, td {
+    border: 1px solid black;
+  
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+
+    @include mobile {
+        padding: 4px;  // Reducir el padding en móviles para aprovechar mejor el espacio
+        font-size: 12px;  // Reducir la fuente en móviles para mejorar la legibilidad
+    }
+}
+
+th {
+    background-color: #f2f2f2;
+    width: 10%;
+}
+  
+
+          
+tr{
+ margin-left: 16px;
+  margin-right: 16px;
+}
+
+
+.agregarCliente{
+
+    border-radius: 5px;
+    padding: 8px;
+    margin-left: 5px;
+
+    @include mobile {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+}
+
+.agregarCliente:hover{
+
+    background-color: green;
+    color: #eee;
+    
+}
+
+
+
+.check-sub-button{
+    border-radius: 5px;
+
+    @include mobile {
+        width: auto;
+        padding: 5px;
+      }
+
+}
+
+.check-sub-button:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+
+
+.renew-button{
+
+    padding: 2px;
+    margin-top: 5px;
+    border-radius: 5px;
+
+    @include mobile {
+        width: auto;
+        padding: 5px;
+      }
+    
+}
+
+
+.renew-button:hover{
+    background-color: green;
+    color: white;
+}
+    
+.delete-button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+
+    @include mobile {
+        width: 100px;  // Ajustar el tamaño del botón en móviles para que sea más accesible
+        height: 40px;
+      }
+   }
+   
+   button, button span {
+    transition: 200ms;
+   }
+   
+   button .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+   }
+   
+   .delete-button .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   .delete-button svg {
+    width: 15px;
+    fill: #eee;
+   }
+   
+   .delete-button:hover {
+    background: #c41b1b;
+   }
+   
+   .delete-button:hover .text {
+    color: transparent;
+   }
+   
+   .delete-button:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+   }
+   
+   .delete-button:focus {
+    outline: none;
+   }
+   
+   .delete-button:active .icon svg {
+    transform: scale(0.8);
+   }

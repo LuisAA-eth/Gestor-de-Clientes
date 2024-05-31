@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header_principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-top: 50px;
+}
+.header_principal .menu ul {
+  display: inline-flex;
+  align-items: center;
+  gap: 56px;
+}
+.header_principal .menu ul li {
+  list-style: none;
+}
+.header_principal .menu ul li a {
+  font-family: "Quattrocento", serif;
+  color: #303030;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+.header_principal .Redes_sociales ul {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+.header_principal .Redes_sociales ul li {
+  list-style: none;
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  gap: 10px;
+}
+.main_container .services {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-end;
+  width: 73%;
+  margin-bottom: 16%;
+  margin-left: 160px;
+  margin-top: 300px;
+}
+.main_container .services h2 {
+  color: #303030;
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+.main_container .services article .icon_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.main_container .services article .icon_title img {
+  width: 48px;
+  height: 48px;
+}
+.main_container .services article .icon_title .title_services {
+  color: #303030;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.main_container .services article .text_services {
+  color: #909090;
+  font-family: "Quattrocento", serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.main_container .imagen_personal {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.main_container .imagen_personal .nombre_titulo {
+  color: red;
+  text-shadow: 0px 24px 50px rgba(0, 0, 0, 0.1);
+  font-family: "Oswald", sans-serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100px;
+}
+.main_container .imagen_personal img {
+  width: 50%;
+}
+.main_container .presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 15%;
+  margin-left: 10px;
+}
+
+html * {
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}/*# sourceMappingURL=app.css.map */

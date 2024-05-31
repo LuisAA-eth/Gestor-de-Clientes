@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container2 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+    margin: 10px 0;
+    padding: 8px;
+    width: 200px;
+}
+
+.inicio{
+    margin-top: 50px;
+}
+
+.button2 {
+
+        border-radius: 5px;
+        padding: 8px;
+        margin-left: 5px;
+    
+
+}
+
+
+
+.button2:hover{
+    
+    background-color: green;
+    color: #eee;
+    
+}
+
+#error-msg {
+    color: red;
+}
